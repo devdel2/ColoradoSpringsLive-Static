@@ -1,0 +1,409 @@
+/*Color pallete:
+    #312F2F - Jet (Charcoal grey)
+    #918D8D - Taupe Gray (Light grey)
+    #A17C6B - Beaver (Light pastel brown)
+    #8FA998 - Morning Blue (teal)
+    #9CBFA7 - Cambridge Blue (lighter teal)
+    #FFBC42 - Maximum Yellow Red (Gold/Yellow)
+*/
+
+/* FONTS from GoogeleFonts:
+    main header - berkshire swash
+    sub hearders - DM Serif Display 
+    text - Hind Siliguri
+*/
+
+/*General Styles*/
+html, body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind Siliguri', sans-serif;;
+}
+
+nav a:visited, nav a:active, nav a:hover, a:link{
+    text-decoration: none;
+}
+
+h1, h2, h3, th, .menu {
+    font-family: 'DM Serif Display', serif;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-container{
+    flex-direction: row;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #343a40;
+}
+
+.coverage-topics > li {
+    display: inline;
+    padding: 0 1rem;
+}
+
+
+.coverage-topics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 0;
+    padding: 0;
+}
+
+.coverage-topics h1{
+    font-family: 'Berkshire Swash', cursive;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid #90C2E7;
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+nav a:active{
+    color: #EB5160;
+}
+
+.homepage-header-photo{
+    width: 100%;
+}
+
+.page-heading{
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 80px;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    position: absolute;
+    color: white;
+}
+
+.home-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 15%;
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.artists-button{
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 600;
+    background-color: #90C2E7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+.artists-button:hover{
+    background-color: #7eb7e2;
+    cursor: pointer;
+}
+
+.artists-button:active{
+   background-color: #90C2E7;
+   color: white;
+   position: relative;
+   bottom: -5px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    border-spacing: 0px;
+}
+
+th, td{
+    text-align: center;
+    padding: 1rem;
+}
+
+td a{
+    color: black;
+    text-decoration: underline !important;
+}
+
+th{
+    border-bottom: solid 2px #90C2E7;
+    letter-spacing: 2px;
+}
+
+.navbar-right, .navbar-left{
+    padding: 0rem 1rem;
+    margin-left: 1rem;
+}
+
+.navbar-left a{
+    padding: 0 1rem;
+}
+
+.tab{
+    margin-left: 2rem;
+}
+
+.footer-container{
+    min-height: 100%;
+    margin-top: 4rem;
+    padding: 1rem;
+    color: white;
+    background-color: #343a40;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin-right: 1rem;
+}
+
+.logo-home{
+    background-color: black;
+}
+
+.about-logo-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.logo{
+    margin-right: 1rem;
+}
+
+.promo-video-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.promo-video{
+    align-self: center;
+}
+
+.mission-statement{
+    margin: 0rem;
+}
+
+.breadcrumbs ul {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.breadcrumbs p{
+    margin: 0 1rem;
+}
+
+.breadcrumbs ul li {
+    list-style: none;
+}
+
+.about-us-header{
+    margin-top: 0;
+}
+
+.artist-photo{
+    max-width: 100%;
+}
+
+.bi{
+    padding-right: 1rem;
+}
+
+artist.li > a:hover{
+    text-decoration: underline;
+}
+
+.spotify-container, .instagram-container, .twitter-container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*Media Queries*/
+@media screen and (max-width: 1400px){
+    .page-heading{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .home-container{
+        font-size: 16px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .coverage-topics{
+        font-size: 15px;
+    }
+    .logo{
+        height: 200px;
+        width: 200px;
+    }
+    .about-logo-container{
+        font-size: 18px;
+    }
+    .promo-video{
+        width: 640px;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .page-heading{
+        font-size: 40px;
+    }.home-container{
+        font-size: 14px;
+    }
+    .navbar-left, .navbar-right{
+        font-size: 12px;
+    }
+    h2, th{
+        font-size: 15px;
+    }
+    .coverage-topics{
+        font-size: 10px;
+    }
+    .artists-button{
+        margin-top: 3rem;
+        padding: 0.5rem 1rem;
+        font-family: 'DM Serif Display', serif;
+        font-weight: 600;
+        background-color: #90C2E7;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .footer-container{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-info{
+        flex-direction: column;
+        align-content: center;
+        font-size: 12px;
+    }
+    .about-logo-container{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+    }
+    .promo-video{
+        width: 320px;
+        height: 180px;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .breadcrumbs ul.artist-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .artist-links .dash{
+        display: none;
+    }
+    .spotify-container, .instagram-container, .twitter-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .twitter-container{
+        margin: 1rem 0;
+    }
+    .instagram-container{
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .page-heading{
+        font-size: 20px;
+    }
+    .coverage-topics{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-logo-container{
+        font-size: 14px;
+    }
+    .logo{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .navbar-left, .navbar-right{
+        font-size: 10px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 12px;
+    }
+    .navbar-left a{
+        padding: 0;
+        margin-right: 12px;
+    }
+    .menu{
+        justify-content: center;
+    }
+    .artists-button{
+        margin-top: 3rem;
+        padding: 0.25rem 0.5rem;
+        font-family: 'DM Serif Display', serif;
+        font-weight: 600;
+        background-color: #90C2E7;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .page-heading{
+        font-size: 10px;
+    }
+}
+
